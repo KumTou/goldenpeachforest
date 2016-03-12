@@ -1,0 +1,360 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+		background-image:url("img/background.jpg");
+	}
+	
+#wrapper {
+		width:1000px;
+		height:900px;
+		margin-left:auto;
+		margin-right:auto;
+		margin-top:75px;
+		background-image:url("img/lesmis.png");
+		background-size:1100px 900px;
+		
+}
+#gif{
+		position:absolute;
+		display:none;
+		margin-top:100px;
+}
+
+#nav{
+		width:900px;
+		height:100px;
+		margin-left:50px;
+		position:relative;
+		top:800px;
+			
+}
+
+#nav a:link{
+		color:red;
+		text-decoration:none;
+}
+
+
+
+.about{
+		width:190px;
+		height:100px;
+		float:left;
+		bottom:20px;
+		margin-left:25px;
+		text-align:center;
+		background-image:url("img/paper.png");
+		background-repeat:no-repeat;
+		background-position:0px -10px;
+		background-size:200px 100px;
+		
+		
+}
+
+
+.about:hover{
+		background-image:url("img/paper2.png");
+		background-repeat:no-repeat;
+		background-position:0px -10px;
+		background-size:200px 100px;
+		
+}
+
+.about:a:hover{
+		color:blue;
+}
+
+
+
+#home{
+		position:absolute;
+		left:220px;
+		bottom:90px;	
+}
+
+#home a:hover{
+		opacity:0.5;
+}
+
+.buy{
+		width:170px;
+		height:100px;
+		float:right;
+		margin-right:25px;
+		text-align:center;
+		background-image:url("img/paper.png");
+		background-repeat:no-repeat;
+		background-position:0px -10px;
+		background-size:200px 100px;
+
+}
+
+.buy:hover{
+		background-image:url("img/paper2.png");
+		background-repeat:no-repeat;
+		background-position:0px -10px;
+		background-size:200px 100px;
+		
+}
+
+#topNav{
+		width:900px;
+		height:100px;
+		margin-left:50px;
+		position:relative;
+		top:100px;
+		
+}
+
+#topNav a:link{
+		color:red;
+		text-decoration:none;
+}
+
+
+.topabout{
+		width:190px;
+		height:100px;
+		float:left;
+		bottom:20px;
+		margin-left:25px;
+		text-align:center;
+		background-image:url("img/paper.png");
+		background-repeat:no-repeat;
+		background-position:0px -10px;
+		background-size:200px 100px;
+		
+		
+}
+.topabout:hover{
+		background-image:url("img/paper2.png");
+		background-repeat:no-repeat;
+		background-position:0px -10px;
+		background-size:200px 100px;
+		
+}
+
+
+#topHome{
+		position:absolute;
+		left:340px;
+		bottom:90px;	
+		
+				
+}
+
+#topHome a:hover{
+		opacity:0.5
+}
+
+.topbuy{
+		width:170px;
+		height:100px;
+		float:right;
+		margin-right:25px;
+		text-align:center;
+		background-image:url("img/paper.png");
+		background-repeat:no-repeat;
+		background-position:0px -10px;
+		background-size:200px 100px;
+
+}
+.topbuy:hover{
+		background-image:url("img/paper2.png");
+		background-repeat:no-repeat;
+		background-position:0px -10px;
+		background-size:200px 100px;
+		
+}
+
+
+h3{
+		
+		font-family:Cardo;
+		font-size:20px;
+		
+}
+
+.about h3{
+		text-indent:30px;
+
+}
+
+audio{
+	display:none;
+}
+
+#content{
+		background-image:url("img/contentbg.png");
+		width:900px;
+		height:623px;
+		margin-left:50px;
+		margin-top:90px;
+}
+
+#content h3{
+		position:relative;
+		top:10px;
+		left:50px;
+
+	}
+
+#orderForm{
+		margin-left:110px;
+		margin-top:35px;
+		overflow:auto;
+
+}
+
+
+form{
+		position:relative;
+		bottom:650px;
+		margin-left:200px;
+		width:400px;
+		font-family:Cardo;
+		font-size:20px;
+		
+}
+
+button{
+		font-size:20px;
+		font-family:Cardo;
+		
+	}
+
+.aboutAuthor{
+		position:relative;
+		float:left;
+		margin-left:40px;
+		margin-top:30px;
+		overflow:auto;
+		width:400px;
+		height:523px;
+		font-family:Cardo;
+		
+	}
+	
+.summary{
+		position:relative;
+		float:left;
+		margin-left:40px;
+		margin-top:30px;
+		overflow:auto;
+		width:400px;
+		height:523px;
+		font-family:Cardo;
+}
+
+.charNav{
+		position:relative;
+		float:left;
+		margin-left:20px;
+		top:10px;
+}
+
+	
+		
+
+#fantine{		
+		
+		position:absolute;
+		width:350px;
+		height:450px;
+		overflow:auto;
+		font-family:Cardo;
+		position:absolute;
+		margin-top:40px;
+		margin-left:80px;	
+}
+
+#cosette{
+		position:absolute;
+		width:350px;
+		height:450px;
+		overflow:auto;
+		font-family:Cardo;
+		position:absolute;
+		margin-top:40px;
+		margin-left:80px;
+		display:none;
+}
+
+#marius{
+		display:none;
+		position:absolute;
+		width:350px;
+		height:450px;
+		overflow:auto;
+		font-family:Cardo;
+		position:absolute;
+		margin-top:40px;
+		margin-left:80px;
+}
+
+#eponine{
+		display:none;
+		position:absolute;
+		width:350px;
+		height:450px;
+		overflow:auto;
+		font-family:Cardo;
+		position:absolute;
+		margin-top:40px;
+		margin-left:80px;
+}
+
+#jean{
+		display:none;
+		position:absolute;
+		width:350px;
+		height:450px;
+		overflow:auto;
+		font-family:Cardo;
+		position:absolute;
+		margin-top:40px;
+		margin-left:80px;
+}
+h4{
+		font-size:20px;
+}
+
+.button{
+		font-size:15px;
+		background-image:url("img/button.png");
+		background-size:cover;
+		color:white;
+	
+		
+}
+
+#slideshow{
+		animation:character 50s linear infinite normal;
+		-webkit-animation:character 50s linear infinite normal;
+		width:395px;
+		height:515px;
+		position:absolute;
+		margin-top:30px;
+		margin-left:480px;
+		
+		
+}
+
+@keyframes character{
+	0%{background-image:url("img/fantine.JPG") ;}
+	30%{background-image:url("img/cosette.jpg");}
+	60%{background-image:url("img/eponine.jpg");}
+	100%{background-image:url("img/jean.JPG");}
+	
+
+}
+
+
+@-webkit-keyframes character{
+	0%{background-image:url("img/fantine.JPG") ;}
+	30%{background-image:url("img/cosette.jpg");}
+	60%{background-image:url("img/eponine.jpg");}
+	100%{background-image:url("img/jean.JPG");}
+
+}

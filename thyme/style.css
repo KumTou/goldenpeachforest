@@ -1,0 +1,207 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+		background-color:#223105;
+		background-image:url("img/hangingsign.png");
+		background-repeat:no-repeat;
+		background-position:300px -110px;
+		background-size:900px;
+		
+		
+	}
+	
+#wrapper{
+		width:1000px;
+		height:auto;
+		margin-right:auto;
+		margin-left:auto;
+		margin-top:150px;
+		
+}
+
+#header{
+		background-color:#A38C50;
+		width:1000px;
+		height:110px;
+		position:absolute;
+		opacity:0.9;
+		background-image:url(img/headerphoto.jpg);
+		background-size:1000px 110px;
+		
+	}
+	
+#headerphoto{
+		position:absolute;
+		margin-left:250px;
+		
+}
+
+#logo{
+		margin-left:10px;
+		margin-top:5px;
+}
+
+#content{
+		background-color:#5E6E68;
+		width:747px;
+		height:665px;
+		margin-left:250px;
+		position:absolute;
+		margin-top:110px;
+		border-left: #F0BE7B solid;
+		text-align:center;
+		font-family:'Alegreya';
+		color:#d0d0ca;
+}
+
+#slideshow{
+		animation:home 50s linear infinite normal; 
+		-webkit-animation:home 50s linear  infinite normal;
+		width:650px;
+		height:500px;
+		margin-left:50px;
+		margin-top:30px;
+		margin-bottom:30px;
+		border:black solid;
+		border-radius:5px;
+}
+
+#menu{
+		width:650px;
+		height:500px;
+		margin-left:50px;
+		margin-top:30px;
+		margin-bottom:30px;
+		border:black solid;
+		overflow:auto;
+		text-align:left;
+		border-radius:5px;
+}
+
+ul{
+		list-style-type:none;
+	}
+
+#menu h3{
+		margin-left:10px;
+}
+
+h2{
+		margin-left:10px;
+}
+#content img{
+
+		margin-top:10px;
+}
+
+#about{
+		font-family:'Alegreya';
+		height:200px;
+		width:650px;
+		margin-left:50px;
+		margin-top:20px;
+		margin-bottom:30px;
+		border-bottom:black solid;
+		border-top:black solid;
+		overflow:auto;
+		text-align:left;
+}
+
+.directions{
+		font-family:'Alegreya';
+		height:500px;
+		width:350px;
+		float:left;
+		margin-left:20px;
+		margin-top:20px;
+		margin-bottom:30px;
+		border-bottom:black solid;
+		border-top:black solid;
+		text-align:left;
+		overflow:auto;
+}
+
+.directions ul{
+	
+		list-style-type:circle;
+	}
+
+#sidebar{
+		background-color:#4C8553;
+		width:250px;
+		height:665px;
+		position:absolute;
+		margin-top:110px;
+		font-family:'Alegreya';
+		border-top: #F0BE7B solid;
+		
+	}
+	
+#navbox{
+		border-radius:5px;
+			
+		margin:10px;
+}	
+
+.nav{
+		border-radius:5px;
+		background-color:#F0BE7B;
+		text-align:center;
+		margin:5px;
+		font-family:'Alegreya';
+}
+
+.nav a:link{
+		color:black;
+		text-decoration:none;
+}
+
+.nav a:visited{
+		color:purple;
+}
+
+.nav a:hover{
+		background-color:gray;
+}
+
+
+#hours{
+		margin-left:30px;
+		margin-top:40px;
+	}
+	
+#share{
+		
+		margin-left:30px;
+		margin-top:40px;
+}
+
+#footerphoto{
+		margin-left:25px;
+		margin-top:-20px;
+}	
+
+
+@keyframes home{
+	0%{background-image:url(img/img1.jpg) ;}
+	20%{background-image:url(img/img2.png);}
+	40%{background-image:url(img/img3.png);}
+	50%{background-image:url(img/img4.jpg);}
+	60%{background-image:url(img/img5.jpg);}
+	80%{background-image:url(img/img6.jpg);}
+	100%{background-image:url(img/img7.jpg);}
+
+}
+
+
+@-webkit-keyframes home{
+	0%{background-image:url(img/img1.jpg);}
+	20%{background-image:url(img/img2.png);}
+	40%{background-image:url(img/img3.png);}
+	50%{background-image:url(img/img4.jpg);}
+	60%{background-image:url(img/img5.jpg);}
+	80%{background-image:url(img/img6.jpg);}
+	100%{background-image:url(img/img7.jpg);}
+
+}

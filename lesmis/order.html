@@ -1,0 +1,202 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Order Form</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Cardo' rel='stylesheet' type='text/css'>
+</head>
+<script type="text/javascript">
+window.onload=function(){
+// collecting elements
+var crinkleSound = document.getElementById('crinkleSound');
+var abTxt=document.getElementById('aboutTxt');
+var charTxt=document.getElementById('charTxt');
+var odTxt=document.getElementById('orderTxt');
+var adTxt=document.getElementById('adaptTxt');
+
+
+//playing welcome sound on mouse over
+abTxt.onmouseover=function(){
+	crinkleSound.play();
+	return false;
+};
+
+charTxt.onmouseover=function(){
+	crinkleSound.play();
+	return false;
+};
+odTxt.onmouseover=function(){
+	crinkleSound.play();
+	return false;
+};
+adTxt.onmouseover=function(){
+	crinkleSound.play();
+	return false;
+};
+
+};
+
+
+</script>	
+
+<body>
+
+	<div id="wrapper"> 
+    		
+    	<div id="topNav">
+                <div class="topabout">
+                    <h3><a id="aboutTxt" href="about.html">ABOUT</a></h3> 
+                </div>
+                <div class="topabout">
+                    <h3><a id="charTxt" href="characters.html">CHARACTERS</a></h3>
+                </div>
+                <div id="topHome">
+               		<a href="index.html"><img src="img/title.png" alt:"title home link" style="width:270px;"></a>
+                </div>
+                <div class="topbuy">
+                    <h3><a id="orderTxt" href="order.html">ORDER BOOK</a></h3>
+                </div>
+                <div class="topbuy">
+                    <h3><a id="adaptTxt" href="author.html">AUTHOR</a></h3>
+                </div> 
+       </div>
+    <audio id="crinkleSound" controls preload="auto">
+            	<source src="audio/crinkle.mp3"></source>
+                <source src="audio/crinkle.ogg"></source>
+             </audio>
+    
+    			<div id="orderForm">
+
+                	<img src="img/orderform.png" alt:"order form" style="height:850px;">
+                 	
+                        <form action="http://www.mccc.edu/cgi-bin/afm_mccc.cgi" method="post" name="bookorder">
+                        <b>NOTE: This is NOT a real order form.</b><br>
+                        First name: 
+                        <input type="text" name="firstname">
+                        <br>
+                        Last name:
+                        <input type="text" name="lastname">
+                        <br>
+                        <br>
+                        Mailing Address (US Only):
+                        <textarea rows="1" cols="15">
+                        </textarea>
+                        <br>
+						City: 
+             			<input type="text"name="city">
+                        State: 
+                        	<select name="states">
+                            <option value="al">Alabama</option>                      
+                        	<option value="ak">Alaska</option>
+                            <option value="az">Arizona</option>
+                            <option value="ar">Arkansas</option>
+                            <option value="ca">California</option>
+                            <option value="co">Colorado</option>
+                            <option value="ct">Connecticut</option>
+                            <option value="de">Delaware</option>
+                            <option value="fl">Florida</option>
+                            <option value="ga">Georgia</option>
+                            <option value="hi">Hawaii</option>
+                            <option value="id">Idaho</option>
+                            <option value="il">Illinois</option>
+                            <option value="in">Indiana</option>
+                            <option value="ia">Iowa</option>
+                            <option value="ks">Kansas</option>
+                            <option value="ky">Kentucky</option>
+                            <option value="la">Louisiana</option>
+                            <option value="me">Maine</option>
+                            <option value="md">Maryland</option>
+                            <option value="ma">Massachusetts</option>
+                            <option value="mi">Michigan</option>
+                            <option value="mn">Minnesota</option>
+                            <option value="ms">Mississipi</option>
+                            <option value="mo">Missouri</option>
+                            <option value="mt">Montana</option>
+                            <option value="ne">Nebraska</option>
+                            <option value="nv">Nevada</option>
+                            <option value="nh">New Hampshire</option>
+                            <option value="nj">New Jersey</option>
+                            <option value="nm">New Mexico</option>
+                            <option value="ny">New York</option>
+                            <option value="nc">North Carolina</option>
+                            <option value="nd">North Dakota</option>
+                            <option value="oh">Ohio</option>
+                            <option value="ok">Oklahoma</option>
+                            <option value="or">Oregon</option>
+                            <option value="pa">Pennsylvania</option>
+                            <option value="ri">Rhode Island</option>
+                            <option value="sc">South Carolina</option>
+                            <option value="sd">South Dakota</option>
+                            <option value="tn">Tennessee</option>
+                            <option value="tx">Texas</option>
+                            <option value="ut">Utah</option>
+                            <option value="vt">Vermont</option>
+                            <option value="va">Virginia</option>
+                            <option value="wa">Washington</option>
+                            <option value="wv">West Virginia</option>
+                            <option value="wi">Wisconsin</option>
+                            <option value="wy">Wyoming</option>
+                            </select>
+                        	Zipcode:
+                            <textarea rows="1" cols="5">
+                            </textarea>
+                            <br>
+                            <br>
+                            Quantity: ($5.99 each):
+                            <textarea rows="1" cols="3">
+                            </textarea>
+                            <br>
+                            Book Type:
+                            <label for="paper"> Paperback</label>
+                            <input type="checkbox" name="booktype" id="paper" value="paper">
+                            <label for="hard"> Hard Cover</label>
+                            <input type="checkbox" name="booktype" id="hard" value="hard">
+                            <br>
+                            Credit Card Number:
+                            <input type="text"name="ccno">
+                            <br>
+                            Credit Card Type:
+                            <select name="cctype">
+                            <option value="visa">Visa</option>
+                            <option value="mc">Master Card</option>
+                            </select>
+                            <br>
+                            Expiration Date (mm/yyyy):
+                            <select name="month">
+                            <option value="1">01</option>
+                            <option value="2">02</option>
+                            <option value="3">03</option>
+                            <option value="4">04</option>
+                            <option value="5">05</option>
+                            <option value="6">06</option>
+                            <option value="7">07</option>
+                            <option value="8">08</option>
+                            <option value="9">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            </select> /
+                            <textarea rows="1" cols="4">
+                            </textarea>
+                            <br>
+                            Shipping Method:
+                            <label for="priority"> Priority</label>
+                            <input type="radio" name="shipping" id="priority" value="priority">
+                            <label for="regular"> Regular</label>
+                            <input type="radio" name="shipping" id="regular" value="regular">
+                            <br>
+                            <input type="hidden" name="RECIPIENT" value="sweeneys@mccc.edu">
+                            <input type="hidden" name="FROMADDRESS" value="name@gmail.com"> 
+                            <input type="hidden" name="SUBJECT" value="Subject Line Here"> 
+                            <input type="hidden" name="THANKURL" value="http://www.google.com"> 
+                            <br>
+                             
+                            <button type="submit" value="Submit">Submit</button>
+                        </form>
+                       
+                </div>
+    </div>
+</body>
+</html>

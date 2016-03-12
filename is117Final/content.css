@@ -1,0 +1,141 @@
+@charset "utf-8";
+/* CSS Document */
+
+#content{
+	background-color:#DEDBAF;
+	height:500px;
+	margin-left:20px;
+	margin-right:20px;
+	margin-top:20px;
+	box-shadow:10px 10px 10px  #43484E;
+}
+
+#bookinfo{
+	background-color:#DEDBAF;
+	height:500px;
+	margin-left:20px;
+	margin-right:20px;
+
+}
+
+#bookinfo h3{
+	padding-top:20px;
+	padding-left:40px;
+}
+
+#bookinfo h5{
+	margin-top:-20px;
+	padding-left:45px;
+}
+#bookinfo ul{
+	padding-top:20px;
+	padding-left:70px;
+	font-weight:bold;
+}
+#bookinfo p{
+	padding-top:-20px;
+	padding-left:60px;
+}
+
+#bookinfo img{
+	float:right;
+	margin:20px
+}
+.abt{
+	position:relative;
+	float:left;
+	margin-left:40px;
+	width:400px;	
+	height:405px;
+	overflow:auto;
+		
+}
+
+
+.abt img{
+	margin-top:50px;
+	margin-left:100px;
+	 
+	
+}
+
+.contact{
+	position:relative;
+	float:left;
+	margin-left:40px;
+	width:400px;	
+	height:405px;	
+}
+
+.contact img{
+	margin-top:50px;
+	
+}
+
+.contact p{
+	margin-top:-25px;
+}
+
+#directions{
+	overflow:scroll;
+	height:300px
+}
+
+.cartItem{
+	padding:10px;
+	margin-left:20px;
+	margin-right:20px;
+	border: 2px solid black;
+	height:150px;
+}
+.cartdes{
+	position:relative;
+	float:left;
+}
+
+#content h4 a{
+	float:right;
+	margin-right:30px;
+}
+
+.quantity{
+	width:30px;
+}
+
+button{
+	font-size:15px;
+	font-family:Palatino Linotype;
+	background-image:url("img/navimg.jpg");
+	height:50px;
+	color:#CCB72A;
+	float:right;
+	margin-right:40px;
+	margin-top:20px;
+}
+
+.payment{
+	float:left;
+	margin-left:70px;	
+}
+
+.payment a:hover{
+	text-decoration:underline;
+}
+h5{
+	text-indent:20px;
+}
+h5 a{
+	color:purple;
+}
+
+h5 a.current{
+	color:black;
+}
+h5 a:hover{
+	text-decoration:underline;
+}
+
+
+
+
+

@@ -1,0 +1,98 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Les Misérables</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Cardo' rel='stylesheet' type='text/css'>
+<link href="animate-1.css" rel="stylesheet" type="text/css">
+</head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+
+	$(document).ready(function(){
+	
+		$(".about").hover(function(){
+			$("#gif").show()
+		});
+		
+		$(".buy").hover(function(){
+			$("#gif").show()
+		});
+		
+		$("#home").hover(function(){
+			$("#gif").show()
+		});
+		
+		$("#wrapper").hover(function(){
+			$("#gif").hide()
+		});
+	});
+
+</script>
+<script type="text/javascript">
+		window.onload=function(){
+		// collecting elements
+			var crinkleSound = document.getElementById('crinkleSound');
+			var abTxt=document.getElementById('aboutTxt');
+			var charTxt=document.getElementById('charTxt');
+			var odTxt=document.getElementById('orderTxt');
+			var adTxt=document.getElementById('adaptTxt');
+			
+			
+			//playing welcome sound on mouse over
+			abTxt.onmouseover=function(){
+				crinkleSound.play();
+				return false;
+			};
+			
+			charTxt.onmouseover=function(){
+				crinkleSound.play();
+				return false;
+			};
+			odTxt.onmouseover=function(){
+				crinkleSound.play();
+				return false;
+			};
+			adTxt.onmouseover=function(){
+				crinkleSound.play();
+				return false;
+			};
+		
+		};
+
+
+</script>	
+
+<body>
+
+	<div id="wrapper" class="fadeIn"> 
+    	<div id="gif">
+        	<img src="img/birds.gif" alt:"birds flying gif/jquery animation" style="width:1000px;">
+        </div>
+    		
+    	<div id="nav" class="fadeIn">
+                <div class="about">
+                    <h3><a id="aboutTxt" href="about.html">ABOUT</a></h3> 
+                </div>
+                <div class="about">
+                    <h3><a id="charTxt" href="characters.html">CHARACTERS</a></h3>
+                </div>
+                <div id="home">
+               		<a href="index.html"><img src="img/title.png" alt:"title home link" style="width:500px;]"></a>
+                </div>
+                <div class="buy">
+                    <h3><a id="orderTxt" href="order.html">ORDER BOOK</a></h3>
+                </div>
+                <div class="buy">
+                    <h3><a id="adaptTxt" href="author.html">AUTHOR</a></h3>
+                </div> 
+       </div>
+   			 <audio id="crinkleSound" controls preload="auto">
+            	<source src="audio/crinkle.mp3"></source>
+                <source src="audio/crinkle.ogg"></source>
+             </audio>
+    
+    </div>
+</body>
+</html>

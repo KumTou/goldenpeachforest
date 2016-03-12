@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>My Cart - Book Haven</title>
+<link href="content.css" rel="stylesheet" type="text/css">
+<link href="normalize.css" rel = "stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id = "wrapper"> 
+    		<div id = "header">
+        			<div class="about">
+            			<a href="about.html"><h4> about</h4></a>
+           			 </div>
+            		<div class="about">
+            			<a href="contact.html"><h4>contact</h4></a>
+                		</div>
+             		<div class="about">
+             			<a href="index.html"><h4>share</h4></a>
+             		</div>
+             		<div id ="home">
+             			<a href="index.html"><img src="img/logo.png" alt ="logo" style="width:200px;"> </a>
+             		</div>
+
+             		<div id ="active" class ="buy">
+             			<a href="cart.html"><h4> cart</h4></a>
+             		 </div>
+              		 <div class = "buy">
+             			<a href="index.html"><h4> my account</h4></a>
+              		 </div>
+        		</div>
+        		<nav>
+        			<ul>
+ 	  		   <li><a href = "index.html"> Home </a> </li>
+	  		   <li><a href = "bookinfo.html"> Hottest </a> </li>
+			   <li><a href = "index.html"> Genre </a> 
+ 					<ul>
+                    	<li><a>Action</a></li>
+                        <li><a> Adventure</a> </li>
+                          <li><a>Chicklit </a></li>
+                          <li><a> Classics </a></li>
+                        <li> <a>General Fiction </a> </li>
+                        <li><a> Historical Fiction</a> </li>
+                        <li><a>Horror </a></li>
+                        <li> <a>Humor </a></li>
+                        <li> <a>Mystery/Thriller</a></li>
+                        <li> <a>Non-Fiction</a></li>
+                        <li><a>Paranormal</a></li>
+                        <li> <a>Poetry </a></li>
+                        <li> <a>Romance</a></li>
+                        <li> <a>Science Fiction </a></li>
+                        <li> <a>Short Story </a></li>
+                        <li> <a>Teen Fiction</a></li>
+                        <li> <a>Vampire</a></li>
+                        <li> <a>Werewolf</a> </li>
+                        </ul>
+</li>
+			   <li><a href = "index.html"> Adv. Search</a> </li>
+			</ul>
+        		</nav>
+
+        <div id="content">
+        	<h5><a href=cart.html>Cart</a> > Customer Information > <a href="">Shipping Method</a> > <a href=""> Payment</a></h5>
+			<form action ="checkout.html">
+				<div class="payment">
+                	<h4> Customer Information</h4>
+                    Email: <input type="text" name="email">
+                    <br>
+                    Already have an account with us?<a href = "account.html"> Login. </a>
+                </div>
+                
+                <div class="payment">
+                <h4>Shipping Address </h4>
+						First name: 
+                        <input type="text" name="firstname">
+                        <br>
+                        Last name:
+                        <input type="text" name="lastname">
+                        <br>
+                        Mailing Address (US Only):
+                        <textarea rows="1" cols="15">
+                        </textarea>
+                        <br>
+						City: 
+             			<input type="text" name="city">
+                        State: 
+                        	<select name="states">
+                            <option value="al">Alabama</option>                      
+                        	<option value="ak">Alaska</option>
+                            <option value="az">Arizona</option>
+                            <option value="ar">Arkansas</option>
+                            <option value="ca">California</option>
+                            <option value="co">Colorado</option>
+                            <option value="ct">Connecticut</option>
+                            <option value="de">Delaware</option>
+                            <option value="fl">Florida</option>
+                            <option value="ga">Georgia</option>
+                            <option value="hi">Hawaii</option>
+                            <option value="id">Idaho</option>
+                            <option value="il">Illinois</option>
+                            <option value="in">Indiana</option>
+                            <option value="ia">Iowa</option>
+                            <option value="ks">Kansas</option>
+                            <option value="ky">Kentucky</option>
+                            <option value="la">Louisiana</option>
+                            <option value="me">Maine</option>
+                            <option value="md">Maryland</option>
+                            <option value="ma">Massachusetts</option>
+                            <option value="mi">Michigan</option>
+                            <option value="mn">Minnesota</option>
+                            <option value="ms">Mississipi</option>
+                            <option value="mo">Missouri</option>
+                            <option value="mt">Montana</option>
+                            <option value="ne">Nebraska</option>
+                            <option value="nv">Nevada</option>
+                            <option value="nh">New Hampshire</option>
+                            <option value="nj">New Jersey</option>
+                            <option value="nm">New Mexico</option>
+                            <option value="ny">New York</option>
+                            <option value="nc">North Carolina</option>
+                            <option value="nd">North Dakota</option>
+                            <option value="oh">Ohio</option>
+                            <option value="ok">Oklahoma</option>
+                            <option value="or">Oregon</option>
+                            <option value="pa">Pennsylvania</option>
+                            <option value="ri">Rhode Island</option>
+                            <option value="sc">South Carolina</option>
+                            <option value="sd">South Dakota</option>
+                            <option value="tn">Tennessee</option>
+                            <option value="tx">Texas</option>
+                            <option value="ut">Utah</option>
+                            <option value="vt">Vermont</option>
+                            <option value="va">Virginia</option>
+                            <option value="wa">Washington</option>
+                            <option value="wv">West Virginia</option>
+                            <option value="wi">Wisconsin</option>
+                            <option value="wy">Wyoming</option>
+                            </select>
+                        	Zipcode:
+                            <textarea rows="1" cols="5">
+                            </textarea>
+                            <br>
+                            Credit Card Number:
+                            <input type="text"name="ccno">
+                            <br>
+                            Credit Card Type:
+                            <select name="cctype">
+                            <option value="visa">Visa</option>
+                            <option value="mc">Master Card</option>
+                            </select>
+                            <br>
+                            Expiration Date (mm/yyyy):
+                            <select name="month">
+                            <option value="1">01</option>
+                            <option value="2">02</option>
+                            <option value="3">03</option>
+                            <option value="4">04</option>
+                            <option value="5">05</option>
+                            <option value="6">06</option>
+                            <option value="7">07</option>
+                            <option value="8">08</option>
+                            <option value="9">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            </select> /
+                            <textarea rows="1" cols="4">
+                            </textarea>
+							<br>
+                            <br>
+                            <button type ="submit" value="Submit">Continue </button>
+					</div>
+            </form>
+        </div>
+        		<div id ="footer">
+		
+	<ul>
+	 		   <li><a href = "about.html">About</a></li> 
+	 		   <li> <a href = "contact.html"> Contact </a> </li>
+	 		   <li> <a href = "index.html"> Share </a> </li>
+			</ul>
+
+			<img src = "img/logo.png" alt = "logo">
+			<h5> 13 Willowtree Road, Leonia, New Jersey 07605 </h5>
+        		</div>
+    </div>
+    
+</body>
+</html>

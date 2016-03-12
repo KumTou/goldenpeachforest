@@ -1,0 +1,186 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-image: url("img/background.jpg");
+	font-family:Palatino Linotype;
+}
+
+#active{
+	opacity:1.0;
+}
+#active a{
+	color:green;
+}
+#wrapper{
+	margin-left:auto;
+	margin-right:auto;
+	width:1000px;
+	height:auto;
+	background-color:#DBB95F;
+	
+}
+#header{
+	background-image:url("img/header.png");
+	height:150px;;
+}
+.about{
+	margin-top:30px;
+	width:100px;
+	float:left;
+	margin-left:20px;
+	text-align:center;
+	background-color:#D6C8A2;
+	opacity:0.5;
+}
+.about a{
+	color:#42126E;
+}
+
+.about:hover{
+	opacity:1.0;
+	color:green;
+}
+
+
+.buy{
+	
+	width:100px;
+	float:right;
+	margin-right:40px;
+	text-align:center;
+	margin-top:30px;
+	background-color:#D6C8A2;
+	opacity:0.5;
+}
+.buy a{
+	color:#42126E;
+}
+
+.buy:hover{
+	opacity:1.0;
+	color:green;
+}
+
+#home{
+	position:absolute;
+	margin-left:380px;
+	width:175px;
+	text-align:center;
+	margin-top:30px;
+	
+}
+nav{
+	margin-left:20px;
+	margin-right:20px;
+	background-image:url("img/navimg.jpg");
+	padding:20px;
+	box-shadow:10px 10px 10px #291108;
+	
+}
+
+nav li{
+	margin-left:20px;
+	float:left;
+	margin-top:-25px;
+	position:relative;
+	display:block;
+}
+
+nav li ul{
+	
+	display:none;
+	position:absolute;
+	background-image:url("img/navimg.jpg");
+	text-indent:-40px;
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+	z-index:1;
+}
+
+nav li ul li{
+	float:none;
+	margin-top:10px;
+}
+nav li ul li a{
+	color:white;
+	font-size:15px;
+	
+}
+
+nav a{
+	text-align:center;
+	font-size:25px;
+	display:block;
+	padding-left:25px;
+	text-decoration:none;
+	width:150px;
+	padding-top:5px;
+	color:#CCB72A;
+	font-weight:bold;
+}
+
+nav  a:hover{
+	color:green;
+}
+nav li:focus, li:hover ul{
+	display:block;	
+}
+
+nav li ul li a:hover{
+	font-style:italic;
+	color:green;
+}
+
+nav ul li a.current {
+	color: green;
+}
+
+
+
+
+
+#footer{
+	background-color:#DBB95F;
+	border-top:black dotted;
+	height:50px;
+	margin:auto;
+	width:1000px;
+	}
+
+#footer a{
+	position:relative;
+	background-color:pink;
+	float:left;
+	margin-left:20px;
+}
+
+#footer a:hover{
+	text-decoration: underline;
+}
+#footer h5{
+	float:right;
+	margin-right:20px;
+	margin-top:-5px;
+}
+#footer img{
+	margin-left:200px;
+	margin-top:-10px;
+}
+
+h4{
+	font-family:Palatino Linotype;
+}
+h2{
+	font-family:Palatino Linotype;
+	margin-left:5px;
+	font-style:italic;
+}
+
+li{
+	list-style-type:none;
+}
+
+a{
+	text-decoration:none;
+}

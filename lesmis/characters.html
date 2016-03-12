@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Characters of Les Mis</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Cardo' rel='stylesheet' type='text/css'>
+</head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+
+$(document).ready(function(){
+
+	$("#bf").click(function(){
+		$("#fantine").show()
+		$("#cosette").hide()
+		$("#marius").hide()
+		$("#eponine").hide()
+		$("#jean").hide()
+	});
+	$("#charTxt").load(function(){
+		$("#cosette").hide()
+		$("#marius").hide()
+		$("#eponine").hide()
+		$("#jean").hide()
+	});
+
+	$("#bc").click(function(){
+		$("#cosette").show()
+		$("#fantine").hide()
+		$("#marius").hide()
+		$("#eponine").hide()
+		$("#jean").hide()
+	});
+	
+	$("#bm").click(function(){
+		$("#cosette").hide()
+		$("#fantine").hide()
+		$("#marius").show()
+		$("#eponine").hide()
+		$("#jean").hide()
+	});
+	
+	$("#be").click(function(){
+		$("#cosette").hide()
+		$("#fantine").hide()
+		$("#marius").hide()
+		$("#eponine").show()
+		$("#jean").hide()
+	});
+		
+	$("#bj").click(function(){
+		$("#cosette").hide()
+		$("#fantine").hide()
+		$("#marius").hide()
+		$("#eponine").hide()
+		$("#jean").show()
+	});
+	
+	
+	
+	
+	
+});
+
+</script>
+
+<script type="text/javascript">
+		window.onload=function(){
+		// collecting elements
+		var crinkleSound = document.getElementById('crinkleSound');
+		var abTxt=document.getElementById('aboutTxt');
+		var charTxt=document.getElementById('charTxt');
+		var odTxt=document.getElementById('orderTxt');
+		var adTxt=document.getElementById('adaptTxt');
+		
+		
+		//playing welcome sound on mouse over
+		abTxt.onmouseover=function(){
+			crinkleSound.play();
+			return false;
+		};
+		
+		charTxt.onmouseover=function(){
+			crinkleSound.play();
+			return false;
+		};
+		odTxt.onmouseover=function(){
+			crinkleSound.play();
+			return false;
+		};
+		adTxt.onmouseover=function(){
+			crinkleSound.play();
+			return false;
+		};
+		
+		};
+
+
+</script>	
+
+<body>
+
+	<div id="wrapper"> 
+    		
+    	<div id="topNav">
+                <div class="topabout">
+                    <h3><a id="aboutTxt" href="about.html">ABOUT</a></h3> 
+                </div>
+                <div class="topabout">
+                    <h3><a id="charTxt" href="characters.html">CHARACTERS</a></h3>
+                </div>
+                <div id="topHome">
+               		<a href="index.html"><img src="img/title.png" alt:"title home link" style="width:270px;"></a>
+                </div>
+                <div class="topbuy">
+                    <h3><a id="orderTxt" href="order.html">ORDER BOOK</a></h3>
+                </div>
+                <div class="topbuy">
+                    <h3><a id="adaptTxt" href="author.html">AUTHOR</a></h3>
+                </div> 
+       </div>
+   			 <audio id="crinkleSound" controls preload="auto">
+            	<source src="audio/crinkle.mp3"></source>
+                <source src="audio/crinkle.ogg"></source>
+             </audio>
+    
+    			<div id="content">
+	
+                	<h3>Major Characters</h3>
+                    
+                    <div class="charNav">
+                    <button id="bf" class="button" value="Fantine">Fantine</button>
+                    </div>
+                    <div class="charNav">
+                    <button id="bc" class="button" value="Cosette">Cosette</button>
+                    </div>
+                    <div class ="charNav">
+                    <button id="bm" class="button" value="Marius">Marius</button>
+                    </div>
+                    <div class="charNav">
+                    <button id="be" class="button" value="Eponine">Eponine</button>
+                    </div>
+                    <div class="charNav">
+                    <button id="bj" class="button"  value="Jean Valjean">Jean Valjean</button>
+                    </div>
+                    <div id="fantine">
+                        <h4>Fantine</h4>
+                        <p>
+                        A beautiful Parisian grisette abandoned with a small child by her lover Felix Tholomyes. Fantine leaves her daughter Cosette in the care of the Thenardiers, innkeepers in the village of Montfermeil. Mme. Thenardier spoils her own daughters and abuses Cosette. Fantine finds work at Monsieur Madeleine's factory. Illiterate, she has others write letters to the Thenardiers on her behalf. A female supervisor discovers that she is an unwed mother and dismisses her. To meet the Thenardiers' repeated demands for money, she sells her hair and two front teeth, and turns to prostitution. 
+                     </p>
+                    </div>
+                <div id="cosette">
+                        <h4>Cosette</h4>	
+                    <p>
+                         The illegitimate daughter of Fantine and Tholomyes. From approximately the age of three to the age of eight, she is beaten and forced to work as a drudge for the Thenardiers. After her mother Fantine dies, Valjean ransoms Cosette from the Thenardiers and cares for her as if she were his daughter. Nuns in a Paris convent educate her. She grows up to become very beautiful. She falls in love with Marius Pontmercy and marries him near the novel's conclusion.
+                     </p>
+                    </div>
+                    <div id="marius">
+                        <h4>Marius</h4>
+                    <p>
+                        A young law student loosely associated with the Friends of the ABC. He shares the political principles of his father and has a tempestuous relationship with his royalist grandfather, Monsieur Gillenormand. He falls in love with Cosette and fights on the barricades when he believes Valjean has taken her to London. After he and Cosette marry, he recognizes Thenardier as a swindler and pays him to leave France.
+                     </p>
+                    </div>
+                    <div id="eponine">
+                    <h4>Eponine</h4>
+                    <p>
+                        The Thenardiers' elder daughter. As a child, she is pampered and spoiled by her parents, but ends up a street urchin when she reaches adolescence. She participates in her father's crimes and begging schemes to obtain money. She is blindly in love with Marius. At Marius' request, she finds Valjean and Cosette's house for him and sadly leads him there. She also prevents her father, Patron-Minette, and Brujon from robbing the house during one of Marius' visits there to see Cosette. After disguising herself as a boy, she manipulates Marius into going to the barricades, hoping that she and Marius will die there together.
+                     </p>
+                    </div>
+                    <div id="jean">
+                    <h4>Jean Valjean</h4>
+                    <p>
+                        The protagonist of the novel. Convicted for stealing a loaf of bread to feed his sister's seven starving children and sent to prison for five years, he is paroled from prison nineteen years later (after four unsuccessful escape attempts added twelve years and fighting back during the second escape attempt added two extra years). Rejected by society for being a former convict, he encounters Bishop Myriel, who turns his life around by showing him mercy and encouraging him to become a new man. He assumes a new identity (Monsieur Madeleine) in order to pursue an honest life.
+                    </p>
+                    </div>
+                    
+                    <div id="slideshow">
+                    </div>	
+
+              </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+﻿
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About Les Mis</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Cardo' rel='stylesheet' type='text/css'>
+
+</head>
+  
+<script type="text/javascript">
+	window.onload=function(){
+		// collecting elements
+		var crinkleSound = document.getElementById('crinkleSound');
+		var abTxt=document.getElementById('aboutTxt');
+		var charTxt=document.getElementById('charTxt');
+		var odTxt=document.getElementById('orderTxt');
+		var adTxt=document.getElementById('adaptTxt');
+		
+		
+		//playing welcome sound on mouse over
+		abTxt.onmouseover=function(){
+			crinkleSound.play();
+			return false;
+		};
+		
+		charTxt.onmouseover=function(){
+			crinkleSound.play();
+			return false;
+		};
+		odTxt.onmouseover=function(){
+			crinkleSound.play();
+			return false;
+		};
+		adTxt.onmouseover=function(){
+			crinkleSound.play();
+			return false;
+		};
+	
+	};
+
+
+</script>	
+
+<body>
+
+	<div id="wrapper"> 
+    		
+    	<div id="topNav">
+                <div class="topabout">
+                    <h3><a id="aboutTxt" href="about.html">ABOUT</a></h3> 
+                </div>
+                <div class="topabout">
+                    <h3><a id="charTxt" href="characters.html">CHARACTERS</a></h3>
+                </div>
+                <div id="topHome">
+               		<a href="index.html"><img src="img/title.png" alt:"title home link" style="width:270px;"></a>
+                </div>
+                <div class="topbuy">
+                    <h3><a id="orderTxt" href="order.html">ORDER BOOK</a></h3>
+                </div>
+                <div class="topbuy">
+                    <h3><a id="adaptTxt" href="author.html">AUTHOR</a></h3>
+                </div> 
+       </div>
+    <audio id="crinkleSound" controls preload="auto">
+            	<source src="audio/crinkle.mp3"></source>
+                <source src="audio/crinkle.ogg"></source>
+             </audio>
+    
+    			<div id="content">
+                    <div class="summary">
+                    	<img src="img/bookcover.jpg" alt"book cover" style="width:395px;height:515px;">
+                    </div>
+                    
+                    <div class="summary">
+                    	<h3>Summary of Les Misérables</h3>
+                        <p>Divided into five volumes, Les Misérables describes the story of the ex-convict Jean Valjean, who becomes a force for good in the world but cannot escape his criminal past. It is set in France in the time period 1815 to 1832. The story begins in 1815 in Digne where Jean Valjean was just released from his 19 years of imprisonment in the galleys-- five for stealing bread for his starving sister and her family and fourteen for numerous escape attempts-- and is turned away by innkeepers because his yellow passport marks him as a former convict. He then runs into Bishop Myriel, who tells him to become an honest man. After some events and thinking, Jean Valjean takes on a new identity to begin a new life full of honesty.</p>
+                        <p>Various subplots centers around the life of Fantine, her illegitimate daughter Cosette, Marius Pontmery, and Eponine. The happenings of their life however, connects to Jean Valjean at some point, and determines how his truth-seeking life will end. </p>
+                    </div>
+                </div>
+    </div>
+</body>
+</html>
