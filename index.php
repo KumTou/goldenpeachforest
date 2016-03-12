@@ -1,6 +1,3 @@
-<?php
-	echo "hello world";
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,10 +9,17 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Bare - Start Bootstrap Template (for IS219)</title>
-
+    <title>Sabrina Lam's Website</title>
+    <!-- Icon -->
+    <!-- for FF, Chrome, Opera -->
+	<link rel="icon" type="image/png" href="img/icon.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="img/icon.png" sizes="32x32">
+    <!-- Personal Stylesheets/Fonts -->
+    <link href="../css/main.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+	
 
     <!-- Custom CSS -->
     <style>
@@ -33,7 +37,14 @@
     <![endif]-->
 
 </head>
-
+<script> 
+$(document).ready(function(){
+	$("#button").click(function(){
+		$("menu").hide()
+		$("#nav").show()
+	});
+});
+</script>
 <body>
 
     <!-- Navigation -->
@@ -41,25 +52,25 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                <button id = "button" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                   <h4> Menu </h4>
                 </button>
-                <a class="navbar-brand" href="#">Start Bootstrap</a>
+                <a class="navbar-brand" href="index.php"><img src = "img/logo.png" alt = "logo" style = "width:150px; height: 140px; position: absolute; margin-left: 40%; top:-70px;"></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
+                <ul id = "nav"class="nav navbar-nav">
                     <li>
-                        <a href="#">About</a>
+                        <a href="about.html">About</a>
                     </li>
                     <li>
-                        <a href="#">Services</a>
+                        <a href="index.php">Home</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="resume.html">Resume</a>
+                    </li>
+					<li>
+                        <a href="projects.html">Projects</a>
                     </li>
                 </ul>
             </div>
@@ -70,28 +81,24 @@
 
     <!-- Page Content -->
     <div class="container">
-
+ 	<div id = "wrapper">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h1>A Bootstrap Starter Template for IS219</h1>
-                <p class="lead">Complete with pre-defined file paths that you won't have to change!</p>
-                <ul class="list-unstyled">
-                    <li>Bootstrap v3.3.6</li>
-                    <li>jQuery v1.11.1</li>
-                </ul>
+            	<h1>Welcome to the Forest</h1>
+                
             </div>
         </div>
         <!-- /.row -->
-
+	</div>
     </div>
     <!-- /.container -->
 
     <!-- jQuery Version 1.11.1 -->
     <script src="js/jquery.js"></script>
-
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
+	
 </body>
 
 </html>
