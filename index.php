@@ -85,6 +85,7 @@ $(document).ready(function(){
         <div class="row">
             <div class="col-lg-12 text-center">
             	<h1>Welcome to the Forest</h1>
+            	<h1>This page is still under construction, but feel free to take a look</h1>
                 
             </div>
         </div>
