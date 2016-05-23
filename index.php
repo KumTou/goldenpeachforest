@@ -55,7 +55,7 @@ $(document).ready(function(){
                 <button id = "button" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                    <h4> Menu </h4>
                 </button>
-                <a class="navbar-brand" href="index.php"><img src = "img/logo2.png" alt = "logo" style = "width:150px; height: 140px; position: absolute; margin-left: 40%; top:-70px;"></a>
+                <a class="navbar-brand" href="index.php"><img src = "img/logo2.png" alt = "logo" style = "width:150px; height: 140px; position: absolute; margin-left: 40%; top:-120px;"></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
