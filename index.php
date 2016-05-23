@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Sabrina Lam's Website</title>
+    <title>SL Forest</title>
     <!-- Icon -->
     <!-- for FF, Chrome, Opera -->
 	<link rel="icon" type="image/png" href="img/icon.png" sizes="16x16">
